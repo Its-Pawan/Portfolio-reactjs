@@ -1,0 +1,23 @@
+.intro{
+    margin: var(--component-margin);
+    .container{
+
+        .intro-right-data{
+            .main-title{
+                h2 {
+                    font-size: 2.3rem;
+                    font-weight: 700;
+                    margin-bottom: 1rem;
+                    line-height: 3.1rem;
+                    text-transform: uppercase;
+                }
+                p{
+                    margin-bottom: 1.25rem;
+                }
+                .intro-btn{
+                    margin-top: 2rem;
+                }
+            }
+        }
+    }
+}

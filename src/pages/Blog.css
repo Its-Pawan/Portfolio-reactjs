@@ -1,0 +1,6 @@
+.blog-page {
+    /* margin: var( --component-margin); */
+    margin-bottom: 10rem;
+    min-height: 500px;
+    z-index: 234;
+}

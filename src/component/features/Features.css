@@ -1,0 +1,40 @@
+.features {
+  margin: var(--component-margin);
+}
+.features .main_title {
+  text-align: center;
+  margin-bottom: 100px;
+}
+.features .main_title h2 {
+  font-size: 2.3rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  line-height: 3.1rem;
+  text-transform: uppercase;
+}
+.features .main_title p {
+  margin-bottom: 0;
+}
+.features .feature_item {
+  padding: 45px 25px;
+  text-align: center;
+  background: #f9f9fd;
+  cursor: pointer;
+  margin-bottom: 30px;
+  transition: var(--transition);
+}
+.features .feature_item:hover {
+  box-shadow: 0px 15px 30px rgba(77, 87, 222, 0.3);
+  background: var(--white);
+}
+.features .feature_item img {
+  margin-bottom: 35px;
+}
+.features .feature_item h4 {
+  font-size: 20px;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+.features .feature_item p {
+  margin-bottom: 0;
+}/*# sourceMappingURL=Features.css.map */

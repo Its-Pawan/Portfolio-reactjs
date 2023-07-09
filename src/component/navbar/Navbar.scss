@@ -1,0 +1,83 @@
+.navbar {
+    background-color: var(--white) !important;
+    height: 5rem;
+
+
+    .container {
+        justify-content: space-between !important;
+
+        .navbar-collapse {
+            position: relative;
+
+            ul {
+                position: absolute;
+                right: 0;
+
+                li {
+                    padding: 0 .6rem;
+
+                    a {
+                        font-weight: 700 !important;
+                        font-size: .8rem;
+                        color: var(--black);
+                        transition: all .3s ease;
+
+                        &:hover {
+                            color: var(--primary);
+                        }
+                    }
+
+                    .active {
+                        color: var(--primary) !important;
+                    }
+                }
+            }
+        }
+
+        @media only screen and (max-width: 1000px) {
+            .show {
+                ul {
+                    background-color: rgba(0, 0, 0, 0.849) !important;
+                    width: 100%;
+                    text-align: center;
+                    padding: 2rem 0 !important;
+
+                    li {
+                        padding: .2rem 0 !important;
+
+                        a {
+                            font-size: 1.2rem;
+                            color: var(--white);
+
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+// box-shadow: 0px 3px 16px 0px rgba(0, 0, 0, 0.1);
+
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    transition: top 0.4s ease;
+    z-index: 9999;
+    /* Add transition effect */
+}
+
+.navbar.hidden {
+    top: -100px;
+    /* Hide the Navbar above the viewport */
+}
+
+.navbar.sticky {
+    box-shadow: 0px 3px 16px 0px rgba(0, 0, 0, 0.1);
+    top: 0;
+    /* Show the Navbar at the top */
+}

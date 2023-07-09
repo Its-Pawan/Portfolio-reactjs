@@ -1,0 +1,57 @@
+/* defalut css for all files--> */
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Rubik', sans-serif;
+
+    li {
+        list-style: none;
+    }
+
+    a {
+        text-decoration: none;
+    }
+}
+
+:root {
+    --primary: #4458dc;
+    --white: #ffffff;
+    --black: #000000;
+    --gray: #777777;
+    --indigo: #6610f2;
+    --purple: #6f42c1;
+    --transition: all 0.4s ease ;
+    --box-shadow: 0px 8px 30px rgba(118, 85, 225, 0.15);
+    --component-margin: 10rem 0;
+    --def-margin: 10rem;
+}
+
+
+/* Hide the default scrollbar */
+body::-webkit-scrollbar {
+    width: 8px;
+    background-color: #f5f5f5;
+  }
+  
+  /* Track */
+  body::-webkit-scrollbar-track {
+    background: rgba(118, 85, 225, 0.15);
+  }
+  
+  /* Handle */
+  body::-webkit-scrollbar-thumb {
+    background: var(--purple);
+    border-radius: 4px;
+  }
+  
+  /* Handle on hover */
+  body::-webkit-scrollbar-thumb:hover {
+    background: var(--indigo);
+  }
+  
+  .def-bg{
+    background: url(../public/images/body-bg.webp) no-repeat center;
+  }

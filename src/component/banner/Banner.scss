@@ -1,0 +1,98 @@
+.banner {
+    .container-fluid {
+        z-index: 1;
+        background: url('./banner.webp') no-repeat top center;
+        background-position: center;
+        background-size: cover;
+
+        .container {
+            .row {
+                .banner-contant {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    text-align: left;
+
+                    h3 {
+                        font-size: 3rem;
+                        font-weight: 700;
+                        margin-bottom: 20px;
+                        position: relative;
+
+                        &::after {
+                            content: '';
+                            width: 25rem;
+                            height: 3px;
+                            position: absolute;
+                            top: 50%;
+                            left: 25%;
+                            background: #000000;
+                        }
+                    }
+
+                    h1 {
+                        font-size: 70px;
+                        line-height: 60px;
+                        margin-bottom: 25px;
+                        // line-height: .5em;
+                    }
+
+                    h5 {
+                        font-size: 1.8rem;
+                        margin-bottom: 35px;
+                    }
+
+                    .banner-btn {
+                        display: flex;
+                        gap: 1rem;
+                    }
+                }
+
+                .banner-image {
+                    img {
+                        margin-left: 3rem;
+                        width: 90%;
+                        vertical-align: middle;
+                        border-style: none;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media only screen and (max-width: 720px) {
+    .banner {
+        margin-top: 6rem !important;
+    }
+
+
+
+    .banner .container-fluid .container .row .banner-contant h1 {
+        line-height: 6rem;
+    }
+
+    .banner .container-fluid .container .row .banner-image img {
+        margin-left: 1rem;
+        margin-top: 3rem;
+    }
+
+}
+
+@media only screen and (max-width:950px) {
+    .banner {
+        margin-top: 6rem !important;
+    }
+
+    .banner-image {
+        align-items: center;
+        justify-content: center;
+        display: flex;
+    }
+
+    .banner .container-fluid .container .row .banner-contant h3::after {
+        width: 8rem;
+        left: 50%;
+    }
+}

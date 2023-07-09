@@ -1,0 +1,36 @@
+.go-top-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 40px;
+    height: 40px;
+    border: none;
+    background-color: var(--primary);
+    cursor: pointer;
+    opacity: 0;
+    border-radius: 50%;
+    z-index: 56789;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+  }
+  
+  .go-top-button.visible {
+    opacity: 1;
+    visibility: visible;
+  }
+  
+  .arrow-up {
+    position: relative;
+    display: block;
+    width: 0;
+    height: 0;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-bottom: 8px solid #fff;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  /* Add additional styling as needed */
+  

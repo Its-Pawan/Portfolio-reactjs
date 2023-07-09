@@ -1,0 +1,81 @@
+.subscribe {
+    margin: var(--component-margin);
+    color: var(--white);
+
+    .subscription_box {
+        background: url(./subscribe-bg.webp) no-repeat center;
+        padding: 150px 0px;
+
+        h2 {
+            font-weight: 700;
+            margin-bottom: 20px;
+        }
+
+        p {
+            margin-bottom: 0;
+        }
+
+        .subcribe-form {
+            margin-top: 45px;
+        }
+
+        .subscription {
+            .button2 {
+                transition: var(--transition);
+                margin-left: 1rem;
+                margin-top: -1rem;
+                border: 2px solid #000;
+
+                &:hover {
+                    background: #ffffff !important;
+                    color: var(--black);
+                }
+            }
+
+            input {
+                min-width: 380px;
+                max-width: 380px;
+                line-height: 44px;
+                padding: 0 25px;
+                border: 1px solid #ffffff;
+                background: transparent;
+                font-weight: 400;
+                border-radius: 5px;
+                color: #ffffff;
+
+                &::placeholder {
+                    /* Chrome, Firefox, Opera, Safari 10.1+ */
+                    color: var(--white);
+                    opacity: 1;
+                    /* Firefox */
+                }
+
+                &:-ms-input-placeholder {
+                    /* Internet Explorer 10-11 */
+                    color: var(--white);
+                }
+
+                &::-ms-input-placeholder {
+                    /* Microsoft Edge */
+                    color: var(--white);
+                }
+            }
+        }
+    }
+}
+
+
+
+@media (max-width: 620px) {
+    .subscribe {
+        .col-lg-12 {
+            margin: 0 !important;
+            padding: 0;
+        }
+    }
+
+    .subscribe .subscription_box .subscription .button2 {
+        margin-top: 2rem;
+    }
+
+}

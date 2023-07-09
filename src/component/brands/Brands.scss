@@ -1,0 +1,116 @@
+.brands {
+    margin: var(--component-margin);
+
+    .container {
+        .brands-left-data {
+            .single-brand-item {
+                width: 170px;
+                height: 100px;
+                cursor: pointer;
+                margin-bottom: 30px;
+                border: 1px solid #eeeeee;
+                box-shadow: none;
+                transition: var(--transition);
+
+                .d-table-cell {
+                    vertical-align: middle;
+                }
+
+                img {
+                    max-width: 80px;
+                    transition: var(--transition);
+                    margin: 0 auto;
+                }
+
+                &:hover {
+                    border: 1px solid transparent;
+                    box-shadow: 0px 8px 30px rgba(118, 85, 225, 0.15);
+
+                    img {
+                        filter: brightness(0%);
+                    }
+                }
+            }
+        }
+
+        .brands-right-data {
+            .client-info {
+                padding: 25px 30px;
+                background: #faf8ff;
+                text-align: center;
+                position: relative;
+                margin-top: 25px;
+
+                &:before {
+                    content: '';
+                    position: absolute;
+                    top: -25px;
+                    left: -50px;
+                    background: url(./client-info-bg.webp) no-repeat;
+                    height: 175px;
+                    width: 175px;
+                }
+
+                .lage {
+                    color: #854fee;
+                    font-family: "Rubik", sans-serif;
+                    font-size: 100px;
+                    font-weight: 700;
+                    line-height: 85px;
+                    position: relative;
+                    z-index: 9;
+                }
+
+                .smll {
+                    text-align: left;
+                    color: #000000;
+                    font-family: "Rubik", sans-serif;
+                    font-size: 20px;
+                    margin-left: 20px;
+                }
+
+
+                .call-now {
+                    padding-top: 50px;
+                    text-align: left;
+                    margin-bottom: 40px;
+
+                    span {
+                        font-size: 60px;
+                        font-weight: 700;
+                        color: #000000;
+                    }
+
+                    p {
+                        color: #854fee;
+                        font-size: 16px;
+                        text-transform: uppercase;
+                        margin-bottom: 5px;
+                    }
+
+                    h3 {
+                        font-size: 24px;
+                    }
+                }
+
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 570px) {
+    .brands {
+        .brands-left-data {
+            .row {
+
+                .col-lg-4 {
+                    width: 50% !important;
+
+                    &:last-child {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+}

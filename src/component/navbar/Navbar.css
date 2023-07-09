@@ -1,0 +1,50 @@
+.navbar {
+  background-color: var(--white) !important;
+  height: 5rem;
+}
+.navbar .container {
+  justify-content: space-between !important;
+}
+.navbar .container .navbar-collapse {
+  position: relative;
+}
+.navbar .container .navbar-collapse ul {
+  position: absolute;
+  right: 0;
+}
+.navbar .container .navbar-collapse ul li {
+  padding: 0 0.6rem;
+}
+.navbar .container .navbar-collapse ul li a {
+  font-weight: 700 !important;
+  font-size: 0.8rem;
+  color: var(--black);
+  transition: all 0.3s ease;
+}
+.navbar .container .navbar-collapse ul li a:hover {
+  color: var(--primary);
+}
+.navbar .container .navbar-collapse ul li .active {
+  color: var(--primary) !important;
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  transition: top 0.4s ease;
+  z-index: 9999;
+  /* Add transition effect */
+}
+
+.navbar.hidden {
+  top: -100px;
+  /* Hide the Navbar above the viewport */
+}
+
+.navbar.sticky {
+  box-shadow: 0px 3px 16px 0px rgba(0, 0, 0, 0.1);
+  top: 0;
+  /* Show the Navbar at the top */
+}/*# sourceMappingURL=Navbar.css.map */
